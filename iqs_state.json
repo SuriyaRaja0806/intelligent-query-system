@@ -1,0 +1,33 @@
+{
+  "local_demo_user": {
+    "step": 3,
+    "attempts": 6,
+    "created_at": 1756042454.2323735,
+    "history": [
+      {
+        "role": "user",
+        "text": "hello"
+      },
+      {
+        "role": "user",
+        "text": "mentor mode"
+      },
+      {
+        "role": "user",
+        "text": "please can you make mentor mode"
+      },
+      {
+        "role": "user",
+        "text": "shadow"
+      },
+      {
+        "role": "user",
+        "text": "bcra frfznr"
+      },
+      {
+        "role": "user",
+        "text": ""
+      }
+    ]
+  }
+}

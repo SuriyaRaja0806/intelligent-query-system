@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Intelligent Query System</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f5f5f5; text-align: center; padding: 40px; }
+        .chat-box { background: white; padding: 20px; border-radius: 10px; width: 400px; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        input { padding: 10px; width: 70%; }
+        button { padding: 10px; }
+        .msg { margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <div class="chat-box">
+        <h2>🤖 Intelligent Query System</h2>
+
+        {% if user_message %}
+            <div class="msg"><b>You:</b> {{ user_message }}</div>
+            <div class="msg"><b>Mentor:</b> {{ bot_reply }}</div>
+        {% endif %}
+
+        <form method="post" action="/chat">
+            <input type="text" name="message" placeholder="Type your message..." required>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
